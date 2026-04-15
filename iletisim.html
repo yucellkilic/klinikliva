@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KlinikLiva ile iletişime geçin. Elazığ ve İstanbul kliniklerimizden randevu alın. Telefon: 0539 574 92 77, Email: dasdemiraslihan6@gmail.com">
+    <title>İletişim - Randevu Al | KlinikLiva</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="İletişim - Randevu Al">
+    <meta property="og:description" content="Elazığ ve İstanbul kliniklerimizden randevu alın. Size özel fizyoterapi tedavisi için hemen iletişime geçin.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://klinikliva.com/iletisim.html">
+    <meta property="og:image" content="https://klinikliva.com/assets/img/clinic-interior.jpg">
+    <meta property="og:locale" content="tr_TR">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library 2.3.4 -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Skip to Main Content Link (Accessibility) -->
+    <a href="#main-content" class="skip-to-main">Ana içeriğe geç</a>
+    
+    <!-- Sticky Header -->
+    <header class="sticky-header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <img src="assets/img/logo.png" alt="KlinikLiva Logo" class="logo">
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimda.html">Hakkımda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html" class="active">İletişim</a></li>
+                    </ul>
+                </nav>
+                <button class="cta-button">Hemen Başvur</button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menü">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero" data-aos="fade-in">
+            <div class="container">
+                <h1 class="page-title">İletişim</h1>
+                <p class="page-subtitle">Randevu almak için formu doldurun veya bize ulaşın</p>
+            </div>
+        </section>
+
+        <!-- Contact Content Section -->
+        <section class="contact-content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container" data-aos="fade-up">
+                        <h2 class="form-section-title">Randevu Formu</h2>
+                        <form class="contact-form" id="contactForm" action="https://formsubmit.co/dasdemiraslihan6@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="Yeni Randevu Talebi - KlinikLiva">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://klinikliva.com/index.html">
+                            
+                            <div class="form-group">
+                                <label for="name">Ad Soyad *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Hizmet Seçimi *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Seçiniz</option>
+                                    <option value="pelvik-taban">Pelvik Taban Sağlığı</option>
+                                    <option value="fasya-terapi">Fasya Terapi</option>
+                                    <option value="ortopedi">Ortopedik Rehabilitasyon</option>
+                                    <option value="norolojik">Nörolojik Hastalıklar</option>
+                                    <option value="pediatri">Pediatrik Fizyoterapi</option>
+                                    <option value="sporcu">Sporcu Sağlığı</option>
+                                    <option value="pilates">Klinik Pilates</option>
+                                    <option value="dry-needling">Dry Needling</option>
+                                </select>
+                                <span class="error-message" id="serviceError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mesaj</label>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Gönder</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-container" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="form-section-title">İletişim Bilgileri</h2>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="contact-label">Email</h3>
+                                <a href="mailto:dasdemiraslihan6@gmail.com" class="contact-value">dasdemiraslihan6@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="contact-label">Telefon</h3>
+                                <a href="tel:+905395749277" class="contact-value">0539 574 92 77</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="contact-label">WhatsApp</h3>
+                                <a href="https://wa.me/905395749277" target="_blank" rel="noopener noreferrer" class="contact-value">WhatsApp ile İletişim</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="contact-label">Instagram</h3>
+                                <a href="https://instagram.com/klinikliva" target="_blank" rel="noopener noreferrer" class="contact-value">@klinikliva</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Locations Section -->
+                <div class="locations-section">
+                    <h2 class="section-title" data-aos="fade-up">Klinik Lokasyonlarımız</h2>
+                    
+                    <div class="locations-grid">
+                        <!-- Elazığ Location -->
+                        <div class="location-card" data-aos="fade-up" data-aos-delay="0">
+                            <div class="location-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3 class="location-title">Elazığ Merkez</h3>
+                            </div>
+                            <p class="location-address">Elazığ Merkez</p>
+                            <div class="map-container">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.123456789!2d39.226!3d38.681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQwJzUxLjYiTiAzOcKwMTMnMzMuNiJF!5e0!3m2!1str!2str!4v1234567890"
+                                    width="100%"
+                                    height="300"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <a href="https://maps.google.com/?q=Elazığ+Merkez" target="_blank" rel="noopener noreferrer" class="map-link">
+                                <i class="fas fa-directions"></i> Yol Tarifi Al
+                            </a>
+                        </div>
+
+                        <!-- İstanbul Location -->
+                        <div class="location-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="location-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3 class="location-title">İstanbul Nişantaşı</h3>
+                            </div>
+                            <p class="location-address">İstanbul Nişantaşı</p>
+                            <div class="map-container">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.123456789!2d28.994!3d41.046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzQ1LjYiTiAyOMKwNTknMzguNCJF!5e0!3m2!1str!2str!4v1234567890"
+                                    width="100%"
+                                    height="300"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <a href="https://maps.google.com/?q=İstanbul+Nişantaşı" target="_blank" rel="noopener noreferrer" class="map-link">
+                                <i class="fas fa-directions"></i> Yol Tarifi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact" id="floatingContact">
+        <button class="floating-btn" id="floatingBtn" aria-label="İletişim Seçenekleri">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="contact-options" id="contactOptions">
+            <a href="https://wa.me/905395749277" class="contact-option whatsapp" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/klinikliva" class="contact-option instagram" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3 class="footer-title">KlinikLiva</h3>
+                    <p class="footer-text">
+                        Elazığ ve İstanbul'da profesyonel fizyoterapi hizmetleri. 
+                        Ağrısız ve özgür bir yaşam için size özel tedavi yaklaşımları.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/905395749277" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/klinikliva" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Hızlı Linkler</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimda.html">Hakkımda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Hizmetler</h3>
+                    <ul class="footer-links">
+                        <li><a href="hizmetler.html#pelvik-taban">Pelvik Taban Sağlığı</a></li>
+                        <li><a href="hizmetler.html#ortopedi">Ortopedik Rehabilitasyon</a></li>
+                        <li><a href="hizmetler.html#sporcu">Sporcu Sağlığı</a></li>
+                        <li><a href="hizmetler.html#pilates">Klinik Pilates</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">İletişim</h3>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:dasdemiraslihan6@gmail.com">dasdemiraslihan6@gmail.com</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+905395749277">0539 574 92 77</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Elazığ Merkez</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>İstanbul Nişantaşı</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 KlinikLiva. Tüm hakları saklıdır.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library 2.3.4 -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/form-handler.js"></script>
+</body>
+</html>
